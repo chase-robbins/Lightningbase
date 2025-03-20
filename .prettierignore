@@ -1,0 +1,32 @@
+# Build output
+**/lib
+**/dist
+**/build
+
+# Dependencies
+**/node_modules
+
+# Logs
+**/logs
+**/*.log
+
+# Cache
+**/.firebase
+**/.firebaserc
+**/.runtimeconfig.json
+
+# Environment variables
+**/.env
+**/.env.*
+
+# Firebase
+**/firebase-debug.log
+**/ui-debug.log
+**/firebase-debug.*.log
+**/ui-debug.*.log
+
+# Misc
+**/.DS_Store
+**/.idea
+**/.vscode
+**/.git 

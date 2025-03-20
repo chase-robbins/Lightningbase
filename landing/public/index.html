@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPLACE_ME_YOUR_APP_NAME - Automate Affiliate Payouts for Your SaaS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>REPLACE_ME_YOUR_APP_NAME</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#api-showcase">API</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="/app" class="button primary">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Turn Affiliates Into a Scalable Growth Channel</h1>
+                <p>REPLACE_ME_YOUR_APP_NAME makes it effortless for SaaS founders to set up, track, and pay affiliates. Automate commissions based on signups, purchases, or any custom event—without the headaches.</p>
+                <div class="hero-buttons">
+                    <a href="/app/register" class="button primary">Start for Free</a>
+                    <a href="#demo" class="button secondary">Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="payment-flow">
+                    <div class="flow-container">
+                        <div class="flow-step">
+                            <div class="step-icon">
+                                <div class="user-icon">
+                                    <i class="icon-user"></i>
+                                </div>
+                            </div>
+                            <h3>User Referred</h3>
+                            <p>Affiliate link clicked</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10H36M36 10L28 2M36 10L28 18" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-icon">
+                                <div class="subscription-icon">
+                                    <span>$99</span>
+                                </div>
+                            </div>
+                            <h3>Subscription Started</h3>
+                            <p>Conversion tracked</p>
+                        </div>
+                        <div class="flow-arrow">
+                            <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10H36M36 10L28 2M36 10L28 18" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-icon">
+                                <div class="payment-icon">
+                                    <i class="icon-dollar"></i>
+                                </div>
+                            </div>
+                            <h3>Affiliate Paid</h3>
+                            <p>Automated payout</p>
+                        </div>
+                    </div>
+                    <div class="automation-badge">
+                        <span>Fully Automated by REPLACE_ME_YOUR_APP_NAME</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Built for SaaS Growth</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Automated Tracking</h3>
+                    <p>Seamlessly track signups, trials, and purchases without managing spreadsheets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💸</div>
+                    <h3>Instant Payouts</h3>
+                    <p>Pay affiliates automatically based on performance, reducing manual workload.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-time Insights</h3>
+                    <p>Monitor affiliate-driven conversions and optimize campaigns with live data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Developer-Friendly API</h3>
+                    <p>Integrate REPLACE_ME_YOUR_APP_NAME into your SaaS with a few API calls—no complex setup required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="api-showcase" class="api-showcase">
+        <div class="container">
+            <h2>Simple, Powerful API</h2>
+            <p>Integrate REPLACE_ME_YOUR_APP_NAME with just a few lines of code. Our API is designed to be straightforward and developer-friendly.</p>
+            
+            <div class="api-demo">
+                <div class="api-endpoints">
+                    <ul class="endpoint-list">
+                        <li class="endpoint active" data-endpoint="identify">
+                            <div class="endpoint-method">POST</div>
+                            <div class="endpoint-path">/identify</div>
+                            <div class="endpoint-desc">Track new users with their referral code</div>
+                        </li>
+                        <li class="endpoint" data-endpoint="trackEvent">
+                            <div class="endpoint-method">POST</div>
+                            <div class="endpoint-path">/trackEvent</div>
+                            <div class="endpoint-desc">Record conversion events for commission</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-filename">request.js</div>
+                        <div class="editor-actions">
+                            <span class="editor-dot"></span>
+                            <span class="editor-dot"></span>
+                            <span class="editor-dot"></span>
+                        </div>
+                    </div>
+                    <div class="editor-content">
+                        <pre id="identify-code" class="code-example active"><code class="language-javascript">// Identify a new user with their referral code
+fetch('https://api.REPLACE_ME_YOUR_APP_NAME.com/identify', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: JSON.stringify({
+    userId: 'user_123',
+    referralCode: 'PARTNER50'
+  })
+})
+.then(response => response.json())
+.then(data => console.log('User identified:', data));</code></pre>
+                        
+                        <pre id="trackEvent-code" class="code-example"><code class="language-javascript">// Track a conversion event with optional value
+fetch('https://api.REPLACE_ME_YOUR_APP_NAME.com/trackEvent', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: JSON.stringify({
+    userId: 'user_123',
+    eventId: 'subscription_started',
+    eventValue: 99.00  // Optional: value of the event
+  })
+})
+.then(response => response.json())
+.then(data => console.log('Event tracked:', data));</code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="promo-card-container">
+                <div class="promo-card" id="integration-promo">
+                    <div class="promo-content">
+                        <div class="promo-badge">Limited Time Offer</div>
+                        <h3>We'll Write Your Integration Code</h3>
+                        <p>For a limited time, we are providing <strong>free white glove installation</strong> for integrating REPLACE_ME_YOUR_APP_NAME into your application code.</p>
+                        <a href="/contact" class="button primary">Get Free Integration Help</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="api-cta">
+                <p>Ready to integrate? Check out our <a href="/docs">full API documentation</a> to get started.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Trusted by Industry Leaders</h2>
+            <p class="section-subtitle">See how companies are scaling their affiliate programs with REPLACE_ME_YOUR_APP_NAME</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <div class="profile-image">
+                                <!-- Placeholder for profile image -->
+                                <div class="profile-placeholder">CR</div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Chase Robbins</h3>
+                                <p>CEO of Handle</p>
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <!-- Placeholder for company logo -->
+                            <div class="logo-placeholder">Handle</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>REPLACE_ME_YOUR_APP_NAME allowed us to quickly launch an affiliate program for our consumer delivery app without having to build payment infrastructure. Within weeks, we had dozens of affiliates driving new customer acquisition at a fraction of our previous CAC.</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <div class="profile-image">
+                                <!-- Placeholder for profile image -->
+                                <div class="profile-placeholder">MG</div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Max Gomez</h3>
+                                <p>Founder of Breathwrk (1M+ users)</p>
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <!-- Placeholder for company logo -->
+                            <div class="logo-placeholder">Breathwrk</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>REPLACE_ME_YOUR_APP_NAME is far and away the best way to launch an affiliate program for a growing SaaS business. The automated payment handling and tax compliance saved us countless hours of administrative work, allowing our team to focus on product development and user acquisition.</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <div class="profile-image">
+                                <!-- Placeholder for profile image -->
+                                <div class="profile-placeholder">CL</div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Colby Lepore</h3>
+                                <p>CEO of ReplyRobot</p>
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <!-- Placeholder for company logo -->
+                            <div class="logo-placeholder">ReplyRobot</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>We were able to easily build a B2B referral network using REPLACE_ME_YOUR_APP_NAME's flexible commission structure. The platform's ability to handle complex multi-tier payouts and provide transparent reporting has been instrumental in scaling our partner program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Integrate in Minutes</h3>
+                    <p>Connect REPLACE_ME_YOUR_APP_NAME via our API or web dashboard—no messy workarounds.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Invite Affiliates</h3>
+                    <p>Affiliates sign up and get their own referral links to share with potential users.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Track Conversions</h3>
+                    <p>We automatically associate new signups and purchases with the referring affiliate.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Automate Payouts</h3>
+                    <p>Set commission rules, and REPLACE_ME_YOUR_APP_NAME ensures the right people get paid—effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="compliance">
+        <div class="container">
+            <h2>Global Compliance, Simplified</h2>
+            <p class="section-subtitle">Focus on growing your business while we handle the complex compliance requirements</p>
+            
+            <div class="compliance-grid">
+                <div class="compliance-content">
+                    <div class="compliance-feature">
+                        <div class="feature-icon">📋</div>
+                        <h3>Automated Tax Documentation</h3>
+                        <p>We collect and verify all required tax forms (W-9, W-8BEN, etc.) from your affiliates in 50+ countries, ensuring you're always compliant with local regulations.</p>
+                    </div>
+                    
+                    <div class="compliance-feature">
+                        <div class="feature-icon">🧾</div>
+                        <h3>1099 Issuance & Reporting</h3>
+                        <p>REPLACE_ME_YOUR_APP_NAME automatically generates and files 1099 forms for your US-based affiliates, eliminating manual paperwork and reducing your administrative burden.</p>
+                    </div>
+                    
+                    <div class="compliance-feature">
+                        <div class="feature-icon">💼</div>
+                        <h3>Consolidated Invoicing</h3>
+                        <p>Your accounting team receives a single monthly invoice from REPLACE_ME_YOUR_APP_NAME instead of managing dozens of affiliate payments. Simplify your accounts payable process and save hours of work.</p>
+                    </div>
+                </div>
+                
+                <div class="compliance-image">
+                    <div class="compliance-card">
+                        <h3>Why Finance Teams Love Us</h3>
+                        <ul class="compliance-list">
+                            <li>Single source of payment truth</li>
+                            <li>Automated tax withholding</li>
+                            <li>Simplified reconciliation</li>
+                            <li>Reduced compliance risk</li>
+                            <li>Complete audit trail</li>
+                            <li>Streamlined approval workflows</li>
+                        </ul>
+                        <div class="powered-by">
+                            <p>Payments powered by</p>
+                            <img src="https://cdn.worldvectorlogo.com/logos/stripe-3.svg" alt="Stripe" class="stripe-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing That Scales With You</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">$0<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Your first 100 tracked referrals</li>
+                        <li>Advanced analytics</li>
+                        <li>REPLACE_ME_YOUR_APP_NAME branded onboarding</li>
+                        <li>1 user account</li>
+                    </ul>
+                    <a href="/app/register" class="button secondary">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <div class="price">$99<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 2500 referrals per month</li>
+                        <li>Advanced analytics</li>
+                        <li>Multiple affiliate types</li>
+                        <li>Multiple affiliate links</li>
+                        <li>Custom onboarding branding</li>
+                        <li>5 user accounts</li>
+                        <li>Priority support via Slack channel</li>
+                    </ul>
+                    <a href="/app/register?plan=growth" class="button primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>2500+ referrals per month</li>
+                        <li>Everything in Growth</li>
+                        <li>Dedicated account manager</li>
+                        <li>Custom integrations</li>
+                        <li>Unlimited users</li>
+                        <li>Priority support via Slack channel</li>
+                    </ul>
+                    <a href="/contact" class="button secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Start Growing with REPLACE_ME_YOUR_APP_NAME Today</h2>
+            <p>Add a scalable, automated affiliate program to your SaaS—without the headaches.</p>
+            <a href="/app/register" class="button primary">Start Your Free Trial</a>
+        </div>
+    </section>
+
+    <section class="migration">
+        <div class="container">
+            <h3>Seamless Migration</h3>
+            <p>Using any of these services? We'll migrate your data to REPLACE_ME_YOUR_APP_NAME for free.</p>
+            <div class="migration-services">
+                <div class="service">Rewardful</div>
+                <div class="service">FirstPromoter</div>
+                <div class="service">PartnerStack</div>
+                <div class="service">Tapfiliate</div>
+                <div class="service">Trackdesk</div>
+                <div class="service">Everflow</div>
+                <div class="service">TUNE</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>REPLACE_ME_YOUR_APP_NAME</h3>
+                    <p>Effortless affiliate tracking and payouts for SaaS founders.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="/app">Dashboard</a></li>
+                        <li><a href="/api">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/guides">Guides</a></li>
+                        <li><a href="/support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/legal">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 REPLACE_ME_YOUR_APP_NAME. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // API Showcase Interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            // API Endpoints tab switching
+            const endpoints = document.querySelectorAll('.endpoint');
+            const codeExamples = document.querySelectorAll('.code-example');
+            
+            endpoints.forEach(endpoint => {
+                endpoint.addEventListener('click', function() {
+                    // Get the endpoint data attribute
+                    const endpointId = this.getAttribute('data-endpoint');
+                    
+                    // Remove active class from all endpoints and code examples
+                    endpoints.forEach(ep => ep.classList.remove('active'));
+                    codeExamples.forEach(code => code.classList.remove('active'));
+                    
+                    // Add active class to clicked endpoint and corresponding code example
+                    this.classList.add('active');
+                    document.getElementById(`${endpointId}-code`).classList.add('active');
+                });
+            });
+            
+            // Construction banner dismissal
+            const banner = document.getElementById('construction-banner');
+            const closeButton = document.querySelector('.close-banner');
+            
+            if (closeButton && banner) {
+                closeButton.addEventListener('click', function() {
+                    banner.style.display = 'none';
+                    
+                    // Optional: Store in localStorage to keep it closed on refresh
+                    localStorage.setItem('construction-banner-closed', 'true');
+                });
+                
+                // Check if banner was previously closed
+                if (localStorage.getItem('construction-banner-closed') === 'true') {
+                    banner.style.display = 'none';
+                }
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script>
+        // Tilt effect for promo card
+        document.addEventListener('DOMContentLoaded', function() {
+            const promoCard = document.getElementById('integration-promo');
+            
+            if (promoCard) {
+                promoCard.addEventListener('mousemove', function(e) {
+                    const rect = promoCard.getBoundingClientRect();
+                    const x = e.clientX - rect.left; // x position within the element
+                    const y = e.clientY - rect.top; // y position within the element
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    // Calculate rotation based on mouse position
+                    // Reduce the rotation amount by dividing by a larger number for subtler effect
+                    const rotateX = (centerY - y) / 20;
+                    const rotateY = (x - centerX) / 20;
+                    
+                    // Apply the transform
+                    promoCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                
+                // Reset transform when mouse leaves
+                promoCard.addEventListener('mouseleave', function() {
+                    promoCard.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                    
+                    // Smoothly transition back to the floating animation
+                    setTimeout(() => {
+                        promoCard.style.transition = 'transform 0.3s ease';
+                        promoCard.style.transform = '';
+                    }, 100);
+                });
+                
+                // Remove transition on mouse enter for smoother tilt effect
+                promoCard.addEventListener('mouseenter', function() {
+                    promoCard.style.transition = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
