@@ -10,6 +10,7 @@ A full-stack monorepo template for building SaaS applications with React, Fireba
 - 🏗️ **Monorepo Structure**: Organized architecture with shared code
 - 🚀 **Ready-to-deploy**: Configuration for Firebase hosting and GitHub Actions
 - 🛠️ **Developer Experience**: ESLint, Prettier, and TypeScript for a great DX
+- ⚡ **Streamlined Workflow**: Single command to install dependencies and build components in parallel
 
 ## Project Structure
 
@@ -20,7 +21,8 @@ A full-stack monorepo template for building SaaS applications with React, Fireba
 ├── functions/           # Firebase Cloud Functions
 ├── landing/             # Landing page (static HTML/CSS/JS)
 ├── shared/              # Shared TypeScript code (types, utilities)
-└── .firebaserc          # Firebase project configuration
+├── .firebaserc          # Firebase project configuration
+└── package.json         # Root-level scripts for project-wide operations
 ```
 
 ## Getting Started
@@ -64,35 +66,28 @@ cp .env.example .env
 5. **Install dependencies**
 
 ```bash
-# Install root dependencies
-npm install
-
-# Install frontend dependencies
-cd frontend
-npm install
-
-# Install functions dependencies
-cd ../functions
-npm install
-
-# Install shared dependencies
-cd ../shared
-npm install
+# Install all dependencies (root, shared, functions, frontend) with a single command
+npm run install:all
 ```
 
 6. **Run the development server**
 
 ```bash
-# Start the frontend development server
-cd frontend
+# Start all development servers concurrently
 npm run dev
-
-# In another terminal, start the functions emulator
-cd functions
-npm run serve
 ```
 
-7. **Deploy to Firebase**
+7. **Build the project**
+
+```bash
+# Build shared types first, then build functions and frontend in parallel
+npm run build:parallel
+
+# Or build everything sequentially
+npm run build
+```
+
+8. **Deploy to Firebase**
 
 ```bash
 # Build and deploy everything
@@ -103,6 +98,18 @@ firebase deploy --only hosting
 firebase deploy --only functions
 firebase deploy --only firestore
 ```
+
+## Available Scripts
+
+The root `package.json` provides several useful commands:
+
+- `npm run install:all` - Install dependencies for all packages
+- `npm run build` - Build all packages sequentially
+- `npm run build:parallel` - Build shared types first, then build functions and frontend in parallel
+- `npm run dev` - Run development servers for all packages
+- `npm run clean` - Clean build artifacts
+- `npm run lint` - Run linters for all packages
+- `npm run format` - Format code across all packages
 
 ## Customization
 
