@@ -10,7 +10,7 @@ import {
   CardHeader 
 } from '@mui/material'
 import { db } from '../services/firebase'
-import { collection, getDocs, query, where, limit } from 'firebase/firestore'
+import { collection, getDocs, query, limit } from 'firebase/firestore'
 
 const Dashboard = () => {
   const [userCount, setUserCount] = useState<number>(0)

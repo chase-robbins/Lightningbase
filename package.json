@@ -1,0 +1,32 @@
+{
+  "name": "lightningbase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lightningbase application",
+  "scripts": {
+    "install:all": "npm install && npm run install:shared && npm run install:functions && npm run install:frontend",
+    "install:shared": "cd shared && npm install",
+    "install:functions": "cd functions && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "build": "npm run build:shared && npm run build:functions && npm run build:frontend",
+    "build:shared": "cd shared && npm run build",
+    "build:functions": "cd functions && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build:parallel": "npm run build:shared && concurrently \"npm run build:functions\" \"npm run build:frontend\"",
+    "dev": "concurrently \"cd shared && npm run build:watch\" \"cd functions && npm run build:watch\" \"cd frontend && npm run dev\"",
+    "clean": "concurrently \"cd shared && npm run clean\" \"cd functions && rm -rf lib\" \"cd frontend && rm -rf dist\"",
+    "lint": "concurrently \"cd functions && npm run lint\" \"cd frontend && npm run lint\"",
+    "format": "concurrently \"cd functions && npm run format\" \"cd frontend && prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,scss,md}'\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "shared",
+    "functions",
+    "frontend"
+  ]
+} 

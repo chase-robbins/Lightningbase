@@ -1,51 +1,30 @@
-export type PayoutType = 'FIXED' | 'PERCENTAGE';
 export interface FirestoreTimestamp {
     toDate: () => Date;
     seconds: number;
     nanoseconds: number;
 }
+export interface User {
+    uid: string;
+    email: string;
+    displayName?: string;
+    photoURL?: string;
+    createdAt?: FirestoreTimestamp;
+    lastLogin?: FirestoreTimestamp;
+}
 export interface AppData {
     name: string;
-    url: string;
-    type: string;
+    description: string;
     settings: {
-        enableNotifications: boolean;
         theme: string;
+        notifications: boolean;
     };
-    apiKey?: string;
     createdAt?: FirestoreTimestamp;
     updatedAt?: FirestoreTimestamp;
-    _lastUpdatedByFunction?: boolean;
     [key: string]: any;
 }
-export interface Event {
-    id: string;
-    name: string;
-    description: string;
-    payoutType: PayoutType;
-    INTERNAL_ID: string;
-}
-export interface Group {
-    id: string;
-    name: string;
-    description: string;
-}
-export interface PricingStructure {
-    [eventId: string]: {
-        [groupId: string]: number;
-    };
-}
-export interface NewEvent {
-    name: string;
-    description: string;
-    payoutType: PayoutType;
-}
-export interface NewGroup {
-    name: string;
-    description: string;
-}
-export interface SampleEvent {
-    name: string;
-    description: string;
-    payoutType: PayoutType;
+export interface ApiResponse<T> {
+    success: boolean;
+    data?: T;
+    error?: string;
+    timestamp: string;
 }
